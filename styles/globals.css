@@ -1,0 +1,59 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    width: 100%;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.unstyled-select {
+  appearance: 'menulist-button';
+  background-color: rgb(221,221,221);
+  border: 1px solid rgb(118, 118, 118);
+  border-image-width: 1px;
+  border-image-slice: 100%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.3333px;
+  font-stretch: 100%;
+  font-weight: 400;
+  text-align: start;
+  overflow: visible;
+}
+.unstyled-select:focus {
+  outline: 1px solid black;
+}
+
+.default-styled-input {
+  appearance: auto;
+  background-color: white;
+  border: 1px solid rgb(136, 136, 136);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13.3333px;
+}
+button {
+  outline: none !important;
+}
